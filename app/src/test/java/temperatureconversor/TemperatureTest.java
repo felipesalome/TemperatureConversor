@@ -20,5 +20,17 @@ class TemperatureTest {
 
         assertEquals(fTemperatureExpected, instance.getFahrenheitValue());
     }
+    
+    @ParameterizedTest
+    @CsvSource({
+        "32,    0",
+        "212,   100",
+        "77,    25",
+        "99.5,  37.5"
+    })
+    void shouldConvertFahrenheitToCelsius(double fTemperature, double cTemperatureExpected) {
+        ITemperature instance = new Fahrenheit(fTemperature);
 
+        assertEquals(cTemperatureExpected, instance.getCelsiusValue());
+    }
 }
