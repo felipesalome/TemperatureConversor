@@ -1,0 +1,24 @@
+package temperatureconversor;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
+class TemperatureTest {
+
+    @ParameterizedTest
+    @CsvSource({
+        "0,     32",
+        "100,   212",
+        "25,    77",
+        "37.5,  99.5"
+    })
+    void shouldConvertCelsiusToFahrenheit(double cTemperature, double fTemperatureExpected) {
+        ITemperature instance = new Celsius(cTemperature);
+
+        assertEquals(fTemperatureExpected, instance.getFahrenheitValue());
+    }
+
+}
