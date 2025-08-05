@@ -33,4 +33,22 @@ class TemperatureTest {
 
         assertEquals(cTemperatureExpected, instance.getCelsiusValue());
     }
+
+    @Test void shouldConvertOmnidirectionalStartingFromCelsius() {
+        double cExpected = 25d;
+
+        ITemperature instance = new Celsius(cExpected);
+        instance = new Fahrenheit(instance.getFahrenheitValue());
+
+        assertEquals(cExpected, instance.getCelsiusValue());
+    }
+
+    @Test void shouldConvertOmnidirectionalStartingFromFahrenheit() {
+        double fExpected = 32d;
+
+        ITemperature instance = new Fahrenheit(fExpected);
+        instance = new Celsius(instance.getCelsiusValue());
+
+        assertEquals(fExpected, instance.getFahrenheitValue());
+    }
 }
