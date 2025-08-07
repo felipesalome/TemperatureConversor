@@ -1,5 +1,8 @@
 # Documentação do Conversor de Temperaturas
 
+[![Test Coverage](https://raw.githubusercontent.com/felipesalome/TemperatureConversor/main/badges/jacoco.svg)](https://github.com/felipesalome/TemperatureConversor/actions)
+[![Branches Coverage](https://raw.githubusercontent.com/felipesalome/TemperatureConversor/main/badges/branches.svg)](https://github.com/felipesalome/TemperatureConversor/actions)
+
 ## Objetivo
 
 O objetivo deste projeto é desenvolver um sistema simples de conversão de temperaturas que permita converter valores entre Celsius e Fahrenheit. O sistema deve ser implementado em Java 8, utilizando uma interface genérica `Conversor<T>` e implementações específicas para cada tipo de conversão. Este exercício visa praticar princípios de orientação a objetos, como o uso de interfaces, encapsulamento e boas práticas de design, além de aplicar o Desenvolvimento Orientado a Testes (TDD) como abordagem de validação.
