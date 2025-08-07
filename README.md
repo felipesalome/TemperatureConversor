@@ -1,7 +1,7 @@
 # Documentação do Conversor de Temperaturas
 
-[![Test Coverage](https://raw.githubusercontent.com/felipesalome/TemperatureConversor/main/badges/jacoco.svg)](https://github.com/felipesalome/TemperatureConversor/actions)
-[![Branches Coverage](https://raw.githubusercontent.com/felipesalome/TemperatureConversor/main/badges/branches.svg)](https://github.com/felipesalome/TemperatureConversor/actions)
+[![Test Coverage](https://raw.githubusercontent.com/felipesalome/TemperatureConversor/main/.github/badges/jacoco.svg)](https://github.com/felipesalome/TemperatureConversor/actions)
+[![Branches Coverage](https://raw.githubusercontent.com/felipesalome/TemperatureConversor/main/.github/badges/branches.svg)](https://github.com/felipesalome/TemperatureConversor/actions)
 
 ## Objetivo
 

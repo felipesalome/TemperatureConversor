@@ -51,4 +51,18 @@ class TemperatureTest {
 
         assertEquals(fExpected, instance.getFahrenheitValue());
     }
+
+    @Test void shouldntConvertCelsius() {
+        double cTemperature = 29d;
+        ITemperature instance = new Celsius(cTemperature);
+
+        assertEquals(cTemperature, instance.getCelsiusValue());
+    }
+
+    @Test void shouldntConvertFahrenheit() {
+        double fTemperature = 71d;
+        ITemperature instance = new Fahrenheit(fTemperature);
+
+        assertEquals(fTemperature, instance.getFahrenheitValue());
+    }
 }
